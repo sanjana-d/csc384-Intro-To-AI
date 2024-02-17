@@ -1,0 +1,17 @@
+1. Explain what the calculations above might or might not tell you about the "fairness" of your Naive Bayesian network. Explain in 50-100 words.
+The model is trained on a dataset adult-train.csv which comprises of many more males than females. Training on an imbalanced data often results in unfair models.
+In our case, the model has a lot more information about males tham it does females.
+Hence when predicting probabilities for females, it might not be accurate resulting in unfair predictions and biases towards males.
+If percentages differ greatly for females with predicted salary over >=50K (8%) vs males with predicted salary over >=50K (25%) then the model displays potential bias.
+
+
+
+2. Would you be willing to use your model to recommend starting salaries for employees at a firm? Why or why not? Explain in 50-100 words.
+The model may sometimes provide good predictions based on historical data, however it can also show
+bias depending on the training data. If historically only males were mostly hired by the company, it means that the data is not diverse enough 
+and will keep prediciting lower salaries for other genders. Hence, I would not use my model since it shows bias and was trained on not-diverse data
+
+
+
+
+
